@@ -1,0 +1,23 @@
+let ansdisplay=document.getElementById("ansdisplay");
+
+function display(a){
+    ansdisplay.value +=a;
+}
+function Clear(){
+    ansdisplay.value ="";
+
+}
+
+function result(){
+    try{
+        ansdisplay.value=eval(ansdisplay.value);
+    }
+    catch{
+        alert("Enter Valid number");
+    }
+    
+}
+
+function del(){
+    ansdisplay.value=ansdisplay.value.slice(0,-1);
+}
